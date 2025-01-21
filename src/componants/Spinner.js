@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Spinner extends Component {
-  render() {
-    return (
-      <div>
-        <div className="spinner-border" role="status">
-        </div>
+const Spinner = () => {
+  return (
+    <div>
+      <div className="spinner-border" role="status">
       </div>
-    )
-  }
+    </div>
+  )
 }
+
+export default Spinner
