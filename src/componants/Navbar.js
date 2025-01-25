@@ -15,7 +15,7 @@ const Navbar = (props) => {
 
   return (
     <div>
-      <nav className={`navbar navbar-expand-lg bg-${props.mode} navbar-${props.mode}`} >
+      <nav className={`navbar fixed-top navbar-expand-lg bg-${props.mode} navbar-${props.mode}`} >
         <div className="container-fluid mx-5">
           <Link className="navbar-brand" to='/'>NewsOwl</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -48,14 +48,14 @@ const News = (props) => {
 
   return (
     <>
-      <h2 className='text-center my-3' >NewsOwl - Top Headlines on {props.category.replace(/^./, char => char.toUpperCase())} category</h2>
+      <h2 className='text-center' style={{marginTop: "6rem", marginBottom: "1rem"}}>NewsOwl - Top Headlines on {props.category.replace(/^./, char => char.toUpperCase())} category</h2>
 
       {loading && <div className="container text-center"><Spinner /></div>}
 
       <InfiniteScroll
         dataLength={articles.length}
         next={fetchMoreData}
-        hasMore={articles.length < totalResults}
+        hasMore={articles.length+2 < totalResults}
         loader={<div className="container text-center my-3"><Spinner /></div>}
         style={{ overflow: 'hidden' }}
       >
